@@ -1,0 +1,21 @@
+body {
+  -webkit-tap-highlight-color: transparent
+}
+
+#updateTaskSection-title, #updateTaskSection-description {
+  display: inline-block;
+}
+#updateTaskSection-title:empty::before {
+  content: "Title";
+  display: inline-block;
+}
+#updateTaskSection-title:empty:focus::before {
+  content: "Start typing";
+}
+#updateTaskSection-description:empty::before {
+  content: "Description";
+  display: inline-block;
+}
+#updateTaskSection-description:empty:focus::before {
+  content: "Start typing";
+}
